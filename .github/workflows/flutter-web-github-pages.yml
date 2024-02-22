@@ -22,7 +22,7 @@ jobs:
           mkdir _site
           flutter build -v web -o _site --base-href="/${{ github.event.repository.name }}/"
       - name: Archive build artifacts
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v2
         
   deploy:
     environment:
